@@ -1,0 +1,17 @@
+Testing Optuna with Cepea Corn Features.
+
+Optuna is an cut hedge library used for Machine Learning Algorithms Tune
+
+Dataprep.py is a common ETL process using a dataset almost ready
+
+Model_tunning.py define a tunning funcion using optuna and a prediction function
+
+Main.py run the proposed goal of predict corn prices
+
+TimeBaseCV_pedro.py is a Cross Validation for Time Series developed By pedrocampelo https://github.com/pedrocampeloa
+
+plotcv.py and plot_cv2.py are demonstrations on how train sets can be splitted using cross validation
+
+missing requirements.txt
+
+

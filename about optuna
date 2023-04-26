@@ -1,0 +1,27 @@
+Optuna is Library used for  Hyperparameters Tunning and Parallelization
+
+Hyperparameters are parameters that define how the machine learning algorithm will behave. Tunning them will results in
+better outcomes. Each algorithm has it own hyperparamaters, that goes from cost functions details to learning rate speed.
+
+Parallelization is the action to distribute one task in multiple parallel processors. In that way, computing time could
+be reduced. That are may ways that Parallelization can be achieved and it is not every task that would benefit from it.
+
+Optuna searches for the best hyperparameters using try and error strategy. And, at each new try, it uses information
+gathered at past tries to determine which values use in the next try. And the process goes one until a maximum is
+achieved. Optuna is most based on Tree-structured Parzen Estimator, a Bayesian optimization algorithm.
+Along with Hyperparameters tunning, optuna provides parallel distribution optimization, allowing simultaneously trials.
+
+Optuna has a dashboard that provides a visualized display of the optimization process.  With this, the user can obtain
+useful information from experimental results. Optuna also has a functionality to export optimization processes in a
+pandas dataframe, for systematic analysis.
+
+Some others advantages of optuna are:
+- Get hyperparameters importance. Since it is costly tune all hyperparameters using a large scope of options, this
+feature allows us to select the most important hyperparameters to focus on tunning.
+
+To use Optuna, you create a class where you especify the task and than call optuna to optimize the problem.  Those steps
+can be define as:
+- An objective function to be optimized (default is minimizing it).
+- A distribution of the variable we are searching (from which we sample). It could be a continuous or discrete
+distribution.
+- Create a study and invoke the optimize method. As the number of trials increases, the solution will be better.
